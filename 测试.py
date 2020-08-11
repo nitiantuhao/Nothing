@@ -98,7 +98,7 @@ for i in range(3):
     name=input('输入用户名:')
     password=input('请输入密码:')
     if name=='jasmine' and password=='123456':
-        print('欢迎指挥官')
+        print('')
         break
     else:
         print('密码或用户名有误')
