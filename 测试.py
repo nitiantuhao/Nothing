@@ -513,4 +513,38 @@ while True:
         continue
     elif s=='4':
         break
+#@property装饰器的应用及验证
+class Age():
+    def __init__(self,name,age):
+        self.__name=name
+        self.__age=age
+    @property
+    def per(self):
+        return self.__age
+    @per.setter
+    def per(self,age):
+         if age>10:
+             self.__age=age
+         else:
+             print('年龄太小')
+    def __str__(self):
+        return '{}今年{}岁'.format(self.__name,self.__age)
+a=Age('小明',18)
+a.per=9
+print(a)
+#
+class Car():
+    def __init__(self,name):
+        self.coler='黑色'
+        self.name=name
+        print('芜湖')
+    def ages(self):
+        print('品牌{},颜色{},车龄{}岁'.format(self.name, self.coler, self.age))
+class One_car(Car):
+    def __init__(self,name,age):
+        print('bester')
+        super().__init__(name)
+        self.age = age
+o=One_car('大众',9)
+o.ages()
 #
