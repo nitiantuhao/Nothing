@@ -547,4 +547,17 @@ class One_car(Car):
         self.age = age
 o=One_car('大众',9)
 o.ages()
+#关于单例的一种实现方法
+class Singleton:
+    __instance=None
+    def __new__(cls):
+        if cls.__instance is None:#第一次调用__instance为空值
+            cls.__instance=object.__new__(cls)#进入为__instance开辟内存空间
+            return cls.__instance#返回结果,此时__instance不为空值
+        else:
+            return  cls.__instance
+s=Singleton()#第一次调用
+print(s)
+s1=Singleton()
+print(s1)
 #
