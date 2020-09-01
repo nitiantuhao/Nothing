@@ -1,5 +1,5 @@
 #format应用
-movie = '你的名字'
+movie = 'az'
 ticket = 30.9
 count = 40
 message = '''
