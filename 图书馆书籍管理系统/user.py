@@ -9,6 +9,7 @@ def Register():#注册系统
             print('注册成功')
     else:
         print('两次密码不一致')
+        choose()
 def log_in():#登陆判断
     username=input('输入用户名')
     password=input('输入密码')
