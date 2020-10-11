@@ -1,2 +1,2 @@
 import os
-n=1
+n='就离谱'
